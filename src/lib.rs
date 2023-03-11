@@ -1,11 +1,11 @@
 use ambient_api::{
     components::core::{
         game_objects::player_camera,
-        primitives::quad,
-        transform::{lookat_center, translation},
+        primitives::sphere,
         rendering::color,
+        transform::{lookat_center, translation},
     },
-    concepts::{make_perspective_infinite_reverse_camera, make_transformable, make_sphere},
+    concepts::{make_perspective_infinite_reverse_camera, make_sphere, make_transformable},
     prelude::*,
 };
 
@@ -20,8 +20,9 @@ pub async fn main() -> EventResult {
 
     Entity::new()
         .with_merge(make_transformable())
-        .with_default(quad())
-        // .with(color(), random::<Vec3>().extend(1.0))
+        .with_merge(make_sphere())
+        .with_default(sphere())
+        .with(color(), random::<Vec3>().extend(1.0))
         .spawn();
 
     println!("Hello, Ambient!");
