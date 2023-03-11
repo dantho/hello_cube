@@ -36,4 +36,4 @@ ambient run
 
 ![](README_assets/hello_cube_color.png)
 
-**Troubleshooting:** Is your cube still white?  You must add the random color() to the _second Entity_.  The first Entity is the camera, which is invisible.  Perhaps it is now colorful _and_ invisible?  
+**Troubleshooting:** Is your cube still white?  You must add the random color() to the _second Entity_.  The first Entity is the camera, which is invisible.  Perhaps your camera is invisible _and_ colorful?  
