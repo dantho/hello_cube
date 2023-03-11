@@ -1,0 +1,4 @@
+[project]
+id = "hello_cube"
+name = "hello_cube"
+version = "0.0.1"
