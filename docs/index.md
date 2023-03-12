@@ -14,6 +14,6 @@ I'll be taking notes on my journey to learn ECS and Ambient here in this repo.  
 I'll be discussing it in the Beginners-Corner on [Ambient's Discord channel](https://discord.gg/ambient).
 
 ## Table of Contents (lessons?)
-[Page 1](page1_hello.md) -- Hello Quad / Cube / Sphere
-[Page 2](page2_entities_components) -- Entities and Components
-[Page 3]() -- ...
+[Page 1](page1_hello.md) -- Hello Quad / Cube / Sphere  
+[Page 2](page2_entities_components) -- Entities and Components  
+[Page 3]() -- ...  
