@@ -1,7 +1,7 @@
 use ambient_api::{
     components::core::{
         game_objects::player_camera,
-        primitives::sphere,
+        primitives::{sphere, sphere_radius, cube},
         rendering::color,
         transform::{lookat_center, translation},
     },
@@ -20,8 +20,7 @@ pub async fn main() -> EventResult {
 
     Entity::new()
         .with_merge(make_transformable())
-        .with_merge(make_sphere())
-        .with_default(sphere())
+        .with_default(cube())
         .with(color(), random::<Vec3>().extend(1.0))
         .spawn();
 
