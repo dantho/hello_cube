@@ -1,5 +1,5 @@
 # Hello World with Ambient
-### **([Page0](index.md))** [Page1](page1_hello.md) [Page2](page2_entities_components) [Page3]() [Page4]() [Page5]() 
+### **([Page0](index.md))** [Page1](page1_hello.md) [Page2](page2_entities_components.md) [Page3]() [Page4]() [Page5]() 
 
 ## 0.1. [Install Ambient](https://ambientrun.github.io/Ambient/user/installing.html) (<--Url)
 

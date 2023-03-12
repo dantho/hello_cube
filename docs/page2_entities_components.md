@@ -1,5 +1,5 @@
 # Hello World with Ambient
-### [Page0](index.md) [Page1](page1_hello.md) **([Page2](page2_entities_components))** [Page3]() [Page4]() [Page5]() 
+### [Page0](index.md) [Page1](page1_hello.md) **([Page2](page2_entities_components.md))** [Page3]() [Page4]() [Page5]() 
 ## Entities and Components
 Ambient is an ECS game engine.  ECS stands for "Entity Component System" -- 3 different but related pieces that make up the whole. We've already gotten a glimpse of two out of three of these on the previous page.  
 * **Entities are things** -- like cubes or spheres and even the camera which is inserted into the world to view those things.  But weirdly, Entities are _things in the abstract_ -- they don't possess size or shape or color or ability to move.  Entities in Ambient are represented by an number, an `EntityID`, and not much else.  _That's_ how abstract they are!
