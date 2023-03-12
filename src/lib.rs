@@ -24,6 +24,7 @@ pub async fn main() -> EventResult {
         .with(color(), random::<Vec3>().extend(1.0))
         .spawn();
 
+    
     println!("Hello, Ambient!");
 
     EventOk

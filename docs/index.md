@@ -1,5 +1,5 @@
 # Hello World with Ambient
-### **([Page0](index.md))** [Page1](page1_hello.md) [Page2](page2_entities_components.md) [Page3]() [Page4]() [Page5]() 
+### **([Page0](index.md))** [Page1](page1_hello.md) [Page2](page2_entities_components.md) [Page3](page3_systems.md)
 
 ## 0.1. [Install Ambient](https://ambientrun.github.io/Ambient/user/installing.html) (<--Url)
 
@@ -7,7 +7,7 @@ I'm excited about Ambient because I like Rust and I like games.  I think I might
 
 I'm also a complete beginner when it comes to game engines or ECS (Entity Component System).  Ambient is a bit young for a Game Building 101 tutorial to exist, though. They say a great way to learn is to teach*.  Why not write my own!!
 
-(*In defense of teachers everywhere, they usually don't say this to complete beginners.  In my defense, I do know _some_ stuff.)
+(*_In defense of teachers everywhere, they usually don't say this to complete beginners.  In my defense, I do know _some_ stuff._)
 
 I'll be taking notes on my journey to learn ECS and Ambient here in this repo.  For now, it's just interconnected markdown pages.
 

@@ -1,5 +1,5 @@
 # Hello World with Ambient
-### [Page0](index.md) [Page1](page1_hello.md) **([Page2](page2_entities_components.md))** [Page3]() [Page4]() [Page5]() 
+### [Page0](index.md) [Page1](page1_hello.md) **([Page2](page2_entities_components.md))** [Page3](page3_systems.md)
 ## Entities and Components
 Ambient is an ECS game engine.  ECS stands for "Entity Component System" -- 3 different but related pieces that make up the whole. We've already gotten a glimpse of two out of three of these on the previous page.  
 * **Entities are things** -- like cubes or spheres and even the camera which is inserted into the world to view those things.  But weirdly, Entities are _things in the abstract_ -- they don't possess size or shape or color or ability to move.  Entities in Ambient are represented by an number, an `EntityID`, and not much else.  _That's_ how abstract they are!
@@ -9,10 +9,12 @@ Ambient is an ECS game engine.  ECS stands for "Entity Component System" -- 3 di
 ## Components we've seen
 Remember adding
 ```Rust
-    .with(color(), random::<Vec3>().extend(1.0))
+.with(color(), random::<Vec3>().extend(1.0))
 ```
-That line creates a `color()` Component with random RGB data and the alpha channel set to 1.0. Then the `color()` Component is added to the entity we were making.
-
+That line creates a `color()` Component with random RGB data and the alpha channel set to 1.0. Then the `color()` Component is added to the entity we were making.  We also could have made a red cube like this:
+```Rust
+.with(color(), vec4(1.0, 0.0, 0.0, 1.0)) // Red
+```
 ## Entities we've seen
 Looking back at the code we've been modifying, there are two Enties which are clearly instantiated in the code.  Here' how we made a cube show up:
 ```Rust
@@ -28,7 +30,7 @@ The camera Entity is also instantiated, appended with the desired characteristic
 
 But there are a few _other_ Entities in our code. They are used as temporary holders of Components -- a Component package.  They are created by any routine that begins with `make_...`, like `make_tranformable()`.  If you hover over `make_tranformable()` in your code, you should see its description:
 ![](..\assets\make_transformable.png)  
-Note that `make_transformable()` returns an Entity (a package of Components.)  The .with_merge() gobbles up that Entity and incorporates all of its Components into itself, discarding the input Entity. (In Rust parlance, the Entity produced by `make_transformable()` is consumed.)
+Note that `make_transformable()` returns an Entity (a package of Components.)  The `.with_merge()` gobbles up that Entity and incorporates all of its Components into itself, discarding the input Entity. (In Rust parlance, the Entity produced by `make_transformable()` is consumed.)
 
 This finally answers the question we asked at the bottom of the prior page:  
 > "I don't know why _quads_ and _cubes_ just show up, but _spheres_ need to be _made_."  
